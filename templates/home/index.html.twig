@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <div>
+    <p>Les contacts sont :</p>
+        <ul>
+            {% for contact in contacts %}
+                <li>{{ contact.firstName }} {{ contact.lastName }}</li>
+            {% endfor %} 
+        </ul>
+    </div>
+{% endblock %}

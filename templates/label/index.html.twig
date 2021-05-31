@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LabelController!{% endblock %}
+
+{% block body %}
+<ul>
+
+{% for label in labels %}
+    <li>{{label.name}}</li>
+{% endfor %}
+</ul>
+ {{ form(formulaire) }}
+{% endblock %}

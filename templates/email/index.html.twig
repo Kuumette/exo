@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EmailController!{% endblock %}
+
+{% block body %}
+
+<ul>
+{% for email in emails %}
+    <li><p>{{email.email}}</p> <p>{{ email.contact.firstName }} {{ email.contact.lastName }}</p> </li>
+{% endfor %}
+</ul>
+
+{{form(formulaire)}}
+{% endblock %}
